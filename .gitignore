@@ -1,0 +1,11 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
+.bundle/
+.DS_Store
+
+# 公開しないメモ（伏せている媒体名などを含む）
+構成案.md
+.claude/

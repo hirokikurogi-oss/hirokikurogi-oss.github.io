@@ -1,0 +1,7 @@
+# サンプル記事（Zenn）。slug は Zenn の記事 URL の末尾
+- slug: openbd-google-books-isbn-lookup
+  title: openBD と Google Books で ISBN から書誌を引く。series はシリーズ名ではなかった
+- slug: guess-volume-from-book-title
+  title: 本のタイトルから巻数を取り出す正規表現を、表記ゆれのテストで固める
+- slug: sqflite-migration-test-old-schema
+  title: sqflite のマイグレーションを、古いスキーマの DB を実際に作ってテストする

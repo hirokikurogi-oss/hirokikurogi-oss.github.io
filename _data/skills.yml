@@ -1,0 +1,26 @@
+# 言語と経験年数（レバテック提出のスキルシートと同じ値）
+languages:
+  - name: C#
+    years: 6.5
+  - name: Kotlin
+    years: 4.0
+  - name: Java
+    years: 2.3
+  - name: Swift
+    years: 1.5
+  - name: Objective-C
+    years: 1
+  - name: Python
+    years: 1
+  - name: TypeScript
+    years: 0.75
+
+tools:
+  - group: MOBILE
+    items: [Jetpack Compose, SwiftUI, Firebase]
+  - group: WEB / DESKTOP
+    items: [ASP.NET, WPF, Spring Framework]
+  - group: CLOUD
+    items: [AWS S3, AWS Lambda, Azure]
+  - group: CI / VCS
+    items: [Jenkins, Git]

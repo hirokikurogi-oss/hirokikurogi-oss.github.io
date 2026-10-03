@@ -1,0 +1,209 @@
+---
+layout: default
+---
+{%- assign max = site.skill_scale_years | times: 1.0 -%}
+<section class="hero" id="top">
+  <div class="hero-text">
+    <p class="eyebrow">KUROGI HIROKI / 黒木 広季</p>
+    <h1>ソフトウェア開発16年。<br>作る仕事と、書く仕事を請け負います。</h1>
+    <p class="lead">プリンタドライバから業務システム、モバイルアプリまで、受託開発と自社製品開発に携わってきました。直近の4年は、カメラと連携する iOS / Android アプリのプロジェクトリーダーでした。アプリの開発と、技術を伝える執筆の両方をお受けしています。</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#engineer">開発のご相談</a>
+      <a class="btn" href="#writer">執筆のご相談</a>
+    </div>
+  </div>
+  <dl class="spec">
+    <div><dt>STATUS</dt><dd class="status">
+      {%- if site.availability == 'open' -%}
+      <span class="dot" aria-hidden="true"></span>{{ site.available_from }}から週5日・フルリモートで稼働できます
+      {%- else -%}
+      現在、開発案件の受付を停止しています（執筆のご相談は受け付けています）
+      {%- endif -%}
+    </dd></div>
+    <div><dt>CAREER</dt><dd>ソフトウェア開発 16年（2010–2026）</dd></div>
+    <div><dt>ROLE</dt><dd>プロジェクトリーダー／係長（監督職）</dd></div>
+    <div><dt>STACK</dt><dd>Kotlin / Swift / C# / Java / Flutter</dd></div>
+    <div><dt>WRITING</dt><dd>技術記事・解説記事・ドキュメント</dd></div>
+    <div><dt>BASE</dt><dd>九州・フルリモート</dd></div>
+  </dl>
+</section>
+
+<section class="section" id="engineer">
+  <div class="section-head">
+    <h2>アプリを作る</h2>
+    <p class="label">§01 ENGINEERING</p>
+  </div>
+
+  <div class="services">
+    <div>
+      <p class="num">01</p>
+      <h3>iOS / Android アプリの開発</h3>
+      <p>Kotlin・Jetpack Compose、Swift・SwiftUI での新規開発とエンハンス。Flutter での開発にも対応します。</p>
+    </div>
+    <div>
+      <p class="num">02</p>
+      <h3>既存アプリの改修と OS 対応</h3>
+      <p>Android 11〜16、iOS 13〜18 の新 OS 対応と、Xcode のバージョンアップを経験しています。</p>
+    </div>
+    <div>
+      <p class="num">03</p>
+      <h3>要件定義からチームのリードまで</h3>
+      <p>要件定義・設計から評価まで一続きで担当。PL として進捗・品質・工数の管理と顧客折衝をしてきました。</p>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="stack">
+      <h3>スキル</h3>
+      <table class="skills">
+        <thead><tr><th scope="col">LANGUAGE</th><th scope="col">YEARS</th></tr></thead>
+        <tbody>
+        {%- for l in site.data.skills.languages %}
+          {%- assign w = l.years | times: 100.0 | divided_by: max | round: 1 %}
+          <tr>
+            <th scope="row">{{ l.name }}</th>
+            <td><div class="bar-row"><div class="bar" aria-hidden="true"><div style="width: {{ w }}%"></div></div><span>{{ l.years }}年</span></div></td>
+          </tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+      <div class="tools">
+        {%- for g in site.data.skills.tools %}
+        <div>
+          <p>{{ g.group }}</p>
+          <ul>{% for t in g.items %}<li>{{ t }}</li>{% endfor %}</ul>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+
+    <div class="stack">
+      <h3>業務実績</h3>
+      {%- for c in site.data.cases %}
+      <article class="card case">
+        <p class="meta">{{ c.meta }}</p>
+        <h4>{{ c.title }}</h4>
+        <dl>
+          <dt>課題</dt><dd>{{ c.problem }}</dd>
+          <dt>対応</dt><dd>{{ c.action }}</dd>
+          <dt>結果</dt><dd class="result">{{ c.result }}</dd>
+        </dl>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+
+  <div class="stack">
+    <h3>個人開発</h3>
+    <div class="works">
+      <article class="card work-main">
+        <div class="work-text">
+          <p class="num">ストア公開準備中</p>
+          <h4>本棚（hondana）</h4>
+          <p class="muted">紙の本や漫画をバーコードで登録し、シリーズごとに抜けている巻を見つける蔵書管理アプリ。設計から実装まで1人で担当しました。</p>
+          <p class="mono-s">Flutter · SQLite · in_app_purchase</p>
+          <a class="more" href="{{ '/works/hondana/' | relative_url }}">設計の詳細を見る</a>
+        </div>
+        <div class="shots">
+          <img src="{{ '/assets/screenshots/01_shelf.png' | relative_url }}" alt="本棚アプリの一覧画面" width="414" height="900" loading="lazy">
+          <img src="{{ '/assets/screenshots/03_series.png' | relative_url }}" alt="シリーズの抜け巻を表示する画面" width="414" height="900" loading="lazy">
+        </div>
+      </article>
+      <article class="card">
+        <p class="meta">個人利用</p>
+        <h4>novel_tts_reader</h4>
+        <p class="muted">Web 上の小説を取得して解析し、読み上げで続けて再生するアプリ。</p>
+        <p class="mono-s">Flutter · flutter_tts · HTML パース</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="writer">
+  <div class="section-head">
+    <h2>技術を書く</h2>
+    <p class="label">§02 WRITING</p>
+  </div>
+  <p class="lead-l">16年エンジニアとして働いてきた経験をもとに、技術の話を、読む人の立場に合わせて書きます。</p>
+
+  <div class="two-col">
+    <div class="stack">
+      <h3>書けるもの</h3>
+      <ul class="rules">
+        <li>モバイル開発・Flutter の技術記事</li>
+        <li>IT サービス・SaaS の解説記事、導入事例</li>
+        <li>エンジニア向けドキュメント、社内向けの技術解説</li>
+        <li>生成 AI を業務に使う方法の解説</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <h3>執筆実績</h3>
+      <ul class="rules">
+        <li>個人メディアで記事20本以上を企画から公開まで担当</li>
+        <li>電子書籍1冊を企画・執筆・出版まで単独で担当</li>
+        <li>PR 表記やステマ規制などの法令表記を確認しながら書く工程を、自分で回しています</li>
+      </ul>
+      <p class="note">ペンネームでの活動のため、媒体名は公開していません。</p>
+    </div>
+  </div>
+
+  {%- if site.data.articles.size > 0 %}
+  <div class="stack">
+    <h3>サンプル記事</h3>
+    <div class="articles">
+      {%- for a in site.data.articles %}
+      <a class="card article" href="https://zenn.dev/{{ site.zenn }}/articles/{{ a.slug }}"><span class="meta">ZENN</span><span>{{ a.title }}</span></a>
+      {%- endfor %}
+    </div>
+  </div>
+  {%- endif %}
+
+  <div class="terms">
+    <div class="steps">
+      <div><span>STEP 1</span>構成案をお送りします</div>
+      <div><span>STEP 2</span>執筆</div>
+      <div><span>STEP 3</span>修正は1回まで</div>
+    </div>
+    <div class="steps steps-2">
+      <div><span>FORMAT</span>Markdown・Google ドキュメント・Pages（Apple）</div>
+      <div><span>PRICE</span>1本2万円〜（5,000字前後）／文字単価4円〜</div>
+    </div>
+  </div>
+</section>
+
+<section class="section split" id="about">
+  <div class="stack-s">
+    <p class="label">§03 PROFILE</p>
+    <h2>黒木 広季</h2>
+    <p class="muted">HK Work 代表</p>
+  </div>
+  <div class="stack">
+    <p>高校の情報技術科を出てソフトウェア開発会社に入り、16年間ソフトウェアエンジニアとして働きました。プリンタドライバから業務システム、モバイルアプリへと担当を移りながら、どの領域でも設計を任される立場まで上がってきました。2026年10月に個人事業として HK Work を開業しています。</p>
+    <dl class="kv">
+      <dt>BASE</dt><dd>九州（フルリモート）</dd>
+      <dt>LICENSE</dt><dd>基本情報技術者（2011年）<br>Microsoft Certified: Azure Fundamentals（2023年）</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="section split last" id="contact">
+  <div class="stack">
+    <p class="label">§04 CONTACT</p>
+    <h2>お問い合わせ</h2>
+    <p class="muted">開発・執筆どちらのご相談も、メールでどうぞ。2営業日以内にお返事します。</p>
+    <p>メール：<a href="mailto:{{ site.email }}">{{ site.email }}</a><br>GitHub：<a href="https://github.com/{{ site.github }}">{{ site.github }}</a><br>Zenn：<a href="https://zenn.dev/{{ site.zenn }}">{{ site.zenn }}</a></p>
+  </div>
+  <div class="card contact">
+    <p>次の4点を書いていただけると、お返事が早くなります。</p>
+    <ul class="rules">
+      <li>ご相談の種類（アプリ開発／執筆／その他）</li>
+      <li>開始希望時期</li>
+      <li>予算感（月額・記事単価など）</li>
+      <li>ご相談内容</li>
+    </ul>
+    <div class="actions">
+      <a class="btn btn-primary" href="mailto:{{ site.email }}?subject={{ '【開発のご相談】' | url_encode }}">開発の相談をメールで送る</a>
+      <a class="btn" href="mailto:{{ site.email }}?subject={{ '【執筆のご相談】' | url_encode }}">執筆の相談をメールで送る</a>
+    </div>
+  </div>
+</section>

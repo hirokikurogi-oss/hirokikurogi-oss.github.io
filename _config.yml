@@ -1,0 +1,29 @@
+title: HK Work
+description: ソフトウェア開発16年。アプリ開発と技術記事の執筆を請け負う、黒木広季の個人事業 HK Work のサイトです。
+lang: ja
+author: 黒木 広季
+email: hiroki.kurogi@hk-work.com
+github: hirokikurogi-oss
+zenn: hk_work
+
+# 開発案件の受付状況。open = 受付中、closed = 受付停止（執筆の相談は受付中のまま）
+availability: open
+available_from: 2026年11月
+
+# スキル表の横棒の最大値（年）
+skill_scale_years: 7
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - 構成案.md
+  - assets/logo/src
+  - assets/screenshots/README.md
+  - assets/logo/hkwork-logo.webp
+  - assets/logo/hkwork-logo.png
+  - assets/logo/hkwork-mark.png
