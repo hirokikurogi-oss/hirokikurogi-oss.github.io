@@ -9,7 +9,6 @@ HK Work のエンジニアとしてのポートフォリオ。Jekyll で作っ�
 | やりたいこと | 編集するファイル |
 |---|---|
 | 開発案件の受付を止める・再開する | `_config.yml` の `availability`（`open` / `closed`） |
-| 稼働開始時期の表記 | `_config.yml` の `available_from` |
 | スキルの年数・ツール | `_data/skills.yml` |
 | 業務実績 | `_data/cases.yml` |
 | 技術記事（Zenn） | `_data/articles.yml` |
