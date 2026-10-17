@@ -10,7 +10,7 @@ zenn: hk_work
 writer_url: https://green062576.studio.site/
 
 # 開発案件の受付状況。open = 受付中、closed = 受付停止
-availability: open
+availability: closed
 
 # スキル表の横棒の最大値（年）
 skill_scale_years: 7
