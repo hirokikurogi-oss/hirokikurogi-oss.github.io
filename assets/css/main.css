@@ -144,21 +144,13 @@ h4 { font-size: 18px; line-height: 1.5; }
   .shots { border-left: 0; border-top: 1px solid var(--ink); }
 }
 
-/* 執筆 */
+/* 共通リスト・記事カード */
 .rules { padding: 0; list-style: none; border-top: 1px solid var(--ink); }
 .rules li { padding: 14px 0; border-bottom: 1px solid var(--rule); }
 .rules li:last-child { border-bottom: 1px solid var(--ink); }
 .articles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; }
 .article { text-decoration: none; min-height: 120px; gap: 8px; font-weight: 500; }
 .article .meta { font-weight: 400; }
-.terms { border-top: 1px solid var(--ink); border-left: 1px solid var(--ink); background: var(--paper); }
-.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); }
-.steps-2 { grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); }
-.steps > div {
-  padding: 24px; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink);
-  display: flex; flex-direction: column; gap: 6px; font-weight: 500;
-}
-.steps span { font-family: var(--mono); font-size: 12px; font-weight: 400; color: var(--accent); }
 
 /* プロフィール・お問い合わせ */
 .kv { display: grid; grid-template-columns: 120px 1fr; gap: 8px 16px; font-size: 15px; }
@@ -166,7 +158,7 @@ h4 { font-size: 18px; line-height: 1.5; }
 .timeline { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--ink); font-size: 15px; }
 .timeline li { display: grid; grid-template-columns: 72px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
 .timeline li:last-child { border-bottom: 1px solid var(--ink); }
-.timeline span { font-family: var(--mono); font-size: 13px; color: var(--accent); padding-top: 2px; }
+.timeline time { font-family: var(--mono); font-size: 13px; color: var(--accent); padding-top: 2px; }
 .contact { gap: 18px; padding: 28px; }
 
 /* 事例ページ（Markdown） */
