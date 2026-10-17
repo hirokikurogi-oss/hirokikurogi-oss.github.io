@@ -5,11 +5,11 @@ layout: default
 <section class="hero" id="top">
   <div class="hero-text">
     <p class="eyebrow">KUROGI HIROKI / 黒木 広季</p>
-    <h1>ソフトウェア開発16年。<br>作る仕事と、書く仕事を請け負います。</h1>
-    <p class="lead">プリンタドライバから業務システム、モバイルアプリまで、受託開発と自社製品開発に携わってきました。直近の4年は、カメラと連携する iOS / Android アプリのプロジェクトリーダーでした。アプリの開発と、技術を伝える執筆の両方をお受けしています。</p>
+    <h1>ソフトウェア開発16年。<br>設計から実装、チームのリードまで。</h1>
+    <p class="lead">プリンタドライバから業務システム、モバイルアプリまで、受託開発と自社製品開発に携わってきました。直近の4年は、カメラと連携する iOS / Android アプリのプロジェクトリーダーでした。iOS / Android アプリを中心に、業務委託で開発をお受けしています。</p>
     <div class="actions">
-      <a class="btn btn-primary" href="#engineer">開発のご相談</a>
-      <a class="btn" href="#writer">執筆のご相談</a>
+      <a class="btn btn-primary" href="#contact">開発のご相談</a>
+      <a class="btn" href="#engineer">実績を見る</a>
     </div>
   </div>
   <dl class="spec">
@@ -17,13 +17,13 @@ layout: default
       {%- if site.availability == 'open' -%}
       <span class="dot" aria-hidden="true"></span>{{ site.available_from }}から週5日・フルリモートで稼働できます
       {%- else -%}
-      現在、開発案件の受付を停止しています（執筆のご相談は受け付けています）
+      現在、開発案件の受付を停止しています
       {%- endif -%}
     </dd></div>
     <div><dt>CAREER</dt><dd>ソフトウェア開発 16年（2010–2026）</dd></div>
     <div><dt>ROLE</dt><dd>プロジェクトリーダー／係長（監督職）</dd></div>
     <div><dt>STACK</dt><dd>Kotlin / Swift / C# / Java / Flutter</dd></div>
-    <div><dt>WRITING</dt><dd>技術記事・解説記事・ドキュメント</dd></div>
+    <div><dt>ARTICLES</dt><dd>Zenn で技術記事を公開</dd></div>
     <div><dt>BASE</dt><dd>九州・フルリモート</dd></div>
   </dl>
 </section>
@@ -119,56 +119,20 @@ layout: default
   </div>
 </section>
 
-<section class="section" id="writer">
+<section class="section" id="articles">
   <div class="section-head">
-    <h2>技術を書く</h2>
-    <p class="label">§02 WRITING</p>
+    <h2>技術記事</h2>
+    <p class="label">§02 ARTICLES</p>
   </div>
-  <p class="lead-l">16年エンジニアとして働いてきた経験をもとに、技術の話を、読む人の立場に合わせて書きます。</p>
-
-  <div class="two-col">
-    <div class="stack">
-      <h3>書けるもの</h3>
-      <ul class="rules">
-        <li>モバイル開発・Flutter の技術記事</li>
-        <li>IT サービス・SaaS の解説記事、導入事例</li>
-        <li>エンジニア向けドキュメント、社内向けの技術解説</li>
-        <li>生成 AI を業務に使う方法の解説</li>
-      </ul>
-    </div>
-    <div class="stack">
-      <h3>執筆実績</h3>
-      <ul class="rules">
-        <li>個人メディアで記事20本以上を企画から公開まで担当</li>
-        <li>電子書籍1冊を企画・執筆・出版まで単独で担当</li>
-        <li>PR 表記やステマ規制などの法令表記を確認しながら書く工程を、自分で回しています</li>
-      </ul>
-      <p class="note">ペンネームでの活動のため、媒体名は公開していません。</p>
-    </div>
-  </div>
-
+  <p class="lead-l">個人開発の「本棚」で実装して確かめたことを、Zenn に書いています。</p>
   {%- if site.data.articles.size > 0 %}
-  <div class="stack">
-    <h3>サンプル記事</h3>
-    <div class="articles">
-      {%- for a in site.data.articles %}
-      <a class="card article" href="https://zenn.dev/{{ site.zenn }}/articles/{{ a.slug }}"><span class="meta">ZENN</span><span>{{ a.title }}</span></a>
-      {%- endfor %}
-    </div>
+  <div class="articles">
+    {%- for a in site.data.articles %}
+    <a class="card article" href="https://zenn.dev/{{ site.zenn }}/articles/{{ a.slug }}"><span class="meta">ZENN</span><span>{{ a.title }}</span></a>
+    {%- endfor %}
   </div>
   {%- endif %}
-
-  <div class="terms">
-    <div class="steps">
-      <div><span>STEP 1</span>構成案をお送りします</div>
-      <div><span>STEP 2</span>執筆</div>
-      <div><span>STEP 3</span>修正は1回まで</div>
-    </div>
-    <div class="steps steps-2">
-      <div><span>FORMAT</span>Markdown・Google ドキュメント・Pages（Apple）</div>
-      <div><span>PRICE</span>1本2万円〜（5,000字前後）／文字単価4円〜</div>
-    </div>
-  </div>
+  <p class="note">技術記事・解説記事の執筆のご依頼は、<a href="{{ site.writer_url }}">ライターとしてのポートフォリオ</a>をご覧ください。</p>
 </section>
 
 <section class="section split" id="about">
@@ -178,7 +142,15 @@ layout: default
     <p class="muted">HK Work 代表</p>
   </div>
   <div class="stack">
-    <p>高校の情報技術科を出てソフトウェア開発会社に入り、16年間ソフトウェアエンジニアとして働きました。プリンタドライバから業務システム、モバイルアプリへと担当を移りながら、どの領域でも設計を任される立場まで上がってきました。2026年10月に個人事業として HK Work を開業しています。</p>
+    <p>高校の情報技術科を出てソフトウェア開発会社に入り、16年間ソフトウェアエンジニアとして働きました。担当の領域を移りながら、どこでも設計を任される立場まで上がってきました。</p>
+    <ol class="timeline">
+      <li><span>2010.04</span>ソフトウェア開発会社に入社。プリンタドライバの開発（C / C++）</li>
+      <li><span>2013.07</span>業務システムの開発へ（C# / .NET、Java）</li>
+      <li><span>2021.03</span>係長（監督職）に昇格。チームの進捗・品質・工数を管理</li>
+      <li><span>2022.07</span>カメラと連携する iOS / Android アプリのプロジェクトリーダー</li>
+      <li><span>2026.06</span>退職</li>
+      <li><span>2026.10</span>HK Work を開業</li>
+    </ol>
     <dl class="kv">
       <dt>BASE</dt><dd>九州（フルリモート）</dd>
       <dt>LICENSE</dt><dd>基本情報技術者（2011年）<br>Microsoft Certified: Azure Fundamentals（2023年）</dd>
@@ -190,20 +162,20 @@ layout: default
   <div class="stack">
     <p class="label">§04 CONTACT</p>
     <h2>お問い合わせ</h2>
-    <p class="muted">開発・執筆どちらのご相談も、メールでどうぞ。2営業日以内にお返事します。</p>
+    <p class="muted">開発のご相談は、メールでどうぞ。2営業日以内にお返事します。</p>
     <p>メール：<a href="mailto:{{ site.email }}">{{ site.email }}</a><br>GitHub：<a href="https://github.com/{{ site.github }}">{{ site.github }}</a><br>Zenn：<a href="https://zenn.dev/{{ site.zenn }}">{{ site.zenn }}</a></p>
+    <p class="note">執筆のご依頼は<a href="{{ site.writer_url }}">ライターとしてのポートフォリオ</a>からどうぞ。</p>
   </div>
   <div class="card contact">
     <p>次の4点を書いていただけると、お返事が早くなります。</p>
     <ul class="rules">
-      <li>ご相談の種類（アプリ開発／執筆／その他）</li>
+      <li>案件の内容（アプリの種類・担当範囲）</li>
       <li>開始希望時期</li>
-      <li>予算感（月額・記事単価など）</li>
-      <li>ご相談内容</li>
+      <li>稼働の条件（週の日数・期間・リモート可否）</li>
+      <li>予算感（月額など）</li>
     </ul>
     <div class="actions">
       <a class="btn btn-primary" href="mailto:{{ site.email }}?subject={{ '【開発のご相談】' | url_encode }}">開発の相談をメールで送る</a>
-      <a class="btn" href="mailto:{{ site.email }}?subject={{ '【執筆のご相談】' | url_encode }}">執筆の相談をメールで送る</a>
     </div>
   </div>
 </section>

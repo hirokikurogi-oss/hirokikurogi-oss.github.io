@@ -1,4 +1,4 @@
-# サンプル記事（Zenn）。slug は Zenn の記事 URL の末尾
+# サンプル記事（Zenn）。slug は Zenn の記事 URL の末尾。公開済みの記事だけ載せる
 - slug: openbd-google-books-isbn-lookup
   title: openBD と Google Books で ISBN から書誌を引く。series はシリーズ名ではなかった
 - slug: guess-volume-from-book-title

@@ -163,6 +163,10 @@ h4 { font-size: 18px; line-height: 1.5; }
 /* プロフィール・お問い合わせ */
 .kv { display: grid; grid-template-columns: 120px 1fr; gap: 8px 16px; font-size: 15px; }
 .kv dt { font-family: var(--mono); font-size: 12px; padding-top: 3px; }
+.timeline { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--ink); font-size: 15px; }
+.timeline li { display: grid; grid-template-columns: 72px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.timeline li:last-child { border-bottom: 1px solid var(--ink); }
+.timeline span { font-family: var(--mono); font-size: 13px; color: var(--accent); padding-top: 2px; }
 .contact { gap: 18px; padding: 28px; }
 
 /* 事例ページ（Markdown） */

@@ -1,6 +1,8 @@
 # HK Work サイト
 
-Jekyll で作った静的サイト。GitHub Pages（`hirokikurogi-oss/hirokikurogi-oss.github.io`）で公開する。
+HK Work のエンジニアとしてのポートフォリオ。Jekyll で作った静的サイトで、GitHub Pages（`hirokikurogi-oss/hirokikurogi-oss.github.io`）で公開する。
+
+ライターとしてのポートフォリオは STUDIO で別に公開している（`_config.yml` の `writer_url`）。
 
 ## よく触るところ
 
@@ -10,10 +12,16 @@ Jekyll で作った静的サイト。GitHub Pages（`hirokikurogi-oss/hirokikuro
 | 稼働開始時期の表記 | `_config.yml` の `available_from` |
 | スキルの年数・ツール | `_data/skills.yml` |
 | 業務実績 | `_data/cases.yml` |
-| サンプル記事（Zenn） | `_data/articles.yml` |
+| 技術記事（Zenn） | `_data/articles.yml` |
 | トップページの文章 | `index.html` |
 | hondana の事例ページ | `works/hondana/index.md` |
 | 色・余白などの見た目 | `assets/css/main.css`（先頭の `:root` に色がまとまっている） |
+
+## ブランチ
+
+- `main`：エンジニア用（公開するもの）
+- `writer-jekyll`：執筆専用にした版。STUDIO に移したので使っていない
+- `engineer-writer`：開発と執筆の2本立て版
 
 ## 手元で確認する
 
