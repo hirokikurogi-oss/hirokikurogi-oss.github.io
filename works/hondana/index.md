@@ -96,7 +96,7 @@ UI を伴わないロジック層を対象に、壊れると実害が出る箇�
 
 個人開発（1名）。要件定義・画面設計・実装・テストに加え、ストア掲載文言、プライバシーポリシー・利用規約・特定商取引法に基づく表記のドラフト作成まで担当しています。
 
-iOS 版は2026年10月に App Store で公開しました（[App Store で見る](https://apps.apple.com/jp/app/id6822526220)）。Android 版は準備中です。
+iOS 版は2026年10月に App Store で公開しました（[App Store で見る](https://apps.apple.com/jp/app/id6822526220)）。Android 版は、Google Play の登録に必要な D-U-N-S 番号（企業識別番号）の発行待ちです。
 
 ---
 
