@@ -5,3 +5,7 @@
   title: 本のタイトルから巻数を取り出す正規表現を、表記ゆれのテストで固める
 - slug: sqflite-migration-test-old-schema
   title: sqflite のマイグレーションを、古いスキーマの DB を実際に作ってテストする
+- slug: flutter-in-app-purchase-non-consumable
+  title: Flutter の in_app_purchase で買い切りの Pro を作る。iOS の復元は購入が無いと何も流れてこない
+- slug: mobile-scanner-isbn-barcode
+  title: mobile_scanner で本の ISBN を読む。裏表紙の2段バーコードは両方 EAN-13 だった
