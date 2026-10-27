@@ -5,7 +5,7 @@ description: 紙の本と漫画の蔵書を管理し、シリーズごとに抜�
 ---
 # 本棚（hondana）
 
-紙の漫画・書籍の蔵書を管理する iOS / Android アプリ。Flutter 製。企画・設計・実装から App Store への申請までを個人で担当しています。
+紙の漫画・書籍の蔵書を管理する iOS アプリ（Android 版は準備中）。Flutter 製。企画・設計・実装から App Store への申請までを個人で担当しています。
 
 ---
 
@@ -45,7 +45,7 @@ description: 紙の本と漫画の蔵書を管理し、シリーズごとに抜�
 | 外部 API | openBD / Google Books API |
 | バーコード読取 | mobile_scanner |
 | 課金 | in_app_purchase |
-| 対応 OS | iOS / Android |
+| 対応 OS | iOS 17.6 以降（App Store で公開中）<br>Android 7.0 以降（準備中） |
 
 ---
 
