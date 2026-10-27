@@ -11,7 +11,6 @@ App Store に登録した画像（`~/Documents/Claude/hondana-screenshots/upload
 | `01_shelf.png` | 本棚（表紙グリッド） | `01_shelf.png` |
 | `03_series.png` | シリーズ詳細（抜け巻の表示） | `03_series_detail.png` |
 | `04_detail.png` | 書籍詳細 | `04_book_detail.png` |
-| `02_scan.png` | バーコードスキャン中 | **未配置**（シミュレータにカメラがない。実機で撮影する） |
 
 ## 退去ノート
 

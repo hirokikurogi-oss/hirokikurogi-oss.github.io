@@ -23,9 +23,6 @@ description: 紙の本と漫画の蔵書を管理し、シリーズごとに抜�
 |---|---|---|
 | ![本棚]({{ '/assets/screenshots/01_shelf.png' | relative_url }}) | ![抜け巻]({{ '/assets/screenshots/03_series.png' | relative_url }}) | ![詳細]({{ '/assets/screenshots/04_detail.png' | relative_url }}) |
 
-{% comment %}TODO: バーコード読取画面(02_scan.png)を実機で撮影して追加する。
-現状のシミュレータ撮影分はカメラ非対応エラーが表示されており使用不可。{% endcomment %}
-
 ---
 
 ## 主な機能
