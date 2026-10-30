@@ -9,3 +9,5 @@
   title: Flutter の in_app_purchase で買い切りの Pro を作る。iOS の復元は購入が無いと何も流れてこない
 - slug: mobile-scanner-isbn-barcode
   title: mobile_scanner で本の ISBN を読む。裏表紙の2段バーコードは両方 EAN-13 だった
+- slug: app-store-connect-screenshot-size
+  title: App Store Connect のスクリーンショットが「サイズが無効です」で弾かれた。必須の枠は 6.9 インチではなかった
