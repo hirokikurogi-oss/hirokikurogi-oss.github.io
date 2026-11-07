@@ -14,6 +14,7 @@ HK Work のエンジニアとしてのポートフォリオ。Jekyll で作っ�
 | 技術記事（Zenn） | `_data/articles.yml` |
 | トップページの文章 | `index.html` |
 | hondana の事例ページ | `works/hondana/index.md` |
+| 退去ノートの事例ページ | `works/taikyo-note/index.md` |
 | 色・余白などの見た目 | `assets/css/main.css`（先頭の `:root` に色がまとまっている） |
 
 ## ブランチ

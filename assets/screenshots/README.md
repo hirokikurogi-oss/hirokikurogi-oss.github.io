@@ -1,6 +1,6 @@
 # スクリーンショット配置場所
 
-`index.html` と `works/hondana/index.md` が参照するファイル。
+`index.html`、`works/hondana/index.md`、`works/taikyo-note/index.md` が参照するファイル。
 
 ## 本棚（hondana）
 
@@ -20,6 +20,7 @@ App Store に登録した画像（`~/Documents/Claude/taikyo_note/docs/screensho
 |---|---|---|
 | `taikyo_01_rooms.png` | 部屋一覧（撮影の進み具合） | `iphone_04_rooms.png` |
 | `taikyo_02_compare.png` | 入居時と退去時の比較 | `iphone_03_compare.png` |
+| `taikyo_03_pdf.png` | PDF の書き出し設定（`works/taikyo-note` のみ） | `iphone_07_pdf.png` |
 
 ## 配置ルール
 
