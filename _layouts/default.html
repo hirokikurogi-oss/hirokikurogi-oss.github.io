@@ -9,6 +9,7 @@
 <title>{{ site.title }} | 黒木 広季</title>
 {%- endif %}
 <meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
