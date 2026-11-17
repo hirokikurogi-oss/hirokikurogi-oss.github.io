@@ -11,3 +11,11 @@
   title: mobile_scanner で本の ISBN を読む。裏表紙の2段バーコードは両方 EAN-13 だった
 - slug: app-store-connect-screenshot-size
   title: App Store Connect のスクリーンショットが「サイズが無効です」で弾かれた。必須の枠は 6.9 インチではなかった
+- slug: series-subtitle-in-parentheses
+  title: 「ハイキュー!! 1 (日向と影山)」がシリーズにまとまらなかった。巻数のあとの括弧つき副題を正規表現で拾う
+- slug: amivoice-profilewords-flutter
+  title: AmiVoice API で「ハイキュー」が「配給」になった。ユーザー辞書で直した（Flutter）
+- slug: xlsx-shuukei-form-archive-vs-excel
+  title: 国税庁の医療費集計フォームを excel パッケージで書き換えたら、合計の式と固定ペインが消えた（Flutter）
+- slug: reuse-common-parts-third-app
+  title: 3本目のアプリを、2本目の共通部品で作った。そのまま使えたもの、直したもの、作り直したもの（Flutter）
